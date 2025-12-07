@@ -1,0 +1,22 @@
+---
+title: "SEMANA_4"
+author: "Rosemary Mora"
+format: html
+editor: visual
+---
+
+## Quarto
+
+## ¿Còmo descargar un archivo en formato CVS DEL REPOSITORIO GIBHUB?
+
+```{r}
+#Nos dirigimos a la guìa de pràctica y luego a nuestro repositorio.
+```
+
+```{r}
+#Despuès de hacer click en el enlace de nuestro repositorio, seremos dirigidos a la pagina principal del repositorio Github e ingresamos a la (DATA).
+```
+
+```{r}
+#Luego elegimos el archivo CSV y procedemos a descargarlo
+```
