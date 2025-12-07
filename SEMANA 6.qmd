@@ -1,0 +1,27 @@
+---
+title: "SEMANA 6"
+author: "ROSEMARY_MORA"
+format: html
+editor: visual
+---
+
+## Quarto
+
+## ¿CÓMO LIMPIAR UNA DATA PARA UTILIZAR UNA COLUMNA ESPECÌFICA?
+
+```{r}
+#Primero, ponemos la data en RStudio, nos vamos a “import dataset” y le damos “From Text (readr)”, a continuación procedemos a entrar y pegar la data.
+```
+
+PASO 2:
+
+```{r}
+#Copiamos del ejecutable hacia adelante e importamos:
+
+```
+
+PASO 3:
+
+```{r}
+#No utilizaremos la CSV, crearemos una data nueva y ahí trabajaremos utilizando el siguiente código y para limpiar data de una columna que contenga filas na
+```
