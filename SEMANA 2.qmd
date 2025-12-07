@@ -1,0 +1,28 @@
+---
+title: "Semana 2"
+author: "Rosemary_Mora"
+format: html
+editor: visual
+---
+
+## Quarto
+
+## CREANDO UN PROYECTO EN RSTUDIO
+
+PASO 1:
+
+```{r}
+#En la parte superior derecha, se encontrarà la opciòn New Directory, luego click en New Project.
+```
+
+PASO 2:
+
+```{r}
+#Aparecerà una ventana emergente, haga click a la opciòn New Directory, luego click en New project.
+```
+
+PASO 3:
+
+```{r}
+#Felicidades, ya se creò tu proyecto en RSTUDIO.
+```
