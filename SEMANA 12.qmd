@@ -1,0 +1,43 @@
+---
+title: "SEMANA_12"
+author: "ROSEMARY MORA"
+format: html
+editor: visual
+---
+
+## CALCULAR LAS MEDIDAS DE DISPERSION Y TENDENCIA CENTRAL
+
+```{r}
+#Ver las 6 primeras filas
+head(data)
+```
+
+```{r}
+#Calculamos la varianza
+var(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#Calculamos la desviaciòn estandar
+sd(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#Calculamos el rango
+range(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#Rango interquartìlico (IQR)
+IQR(data$Edad,na.rm = TRUE)
+```
+
+```{r}
+#Calculamos los cuartiles
+quantile(data$Edad,probs = c(0.25,0.5,0.75),na.rm = TRUE)
+```
+
+```{r}
+#Resumen completo de todas las medidas
+summary(data$Edad)
+```
