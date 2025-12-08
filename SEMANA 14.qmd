@@ -1,0 +1,46 @@
+---
+title: "SEMANA 14"
+author: "ROSEMARY MORA"
+format: html
+editor: visual
+---
+
+## REGRESIÒN LINEAL SIMPLE Y MÙLTIPLE
+
+```{r}
+data<- read_csv("C:/Users/bambi/Downloads/almac_sangre.csv")
+View(almac_sangre)
+```
+
+```{r}
+#Ver la base para ver las variables
+names(data)
+```
+
+```{r}
+#Gràfico de dispersiòn
+ggplot(data,aes(x=Volumen_tumoral, y=Edad))+
+  geom_point()+
+  geom_smooth(method = "lm")+labs(title = "Dispersiòn entre Edad y Volumen Tumoral",
+                                  x="Volumen Tumoral",
+                                  y="Edad")
+```
+
+```{r}
+#Regresiòn lineal simple
+data$Volumen_tumoral<-as.numeric(as.factor(data$Volumen_tumoral))
+
+modelo_simple <- lm(Edad ~ Volumen_tumoral, data = almac_sangre)
+summary(modelo_simple)
+```
+
+```{r}
+#Regresiòn lineal multiple
+modelo_multiple <- lm(Edad ~ Volumen_tumoral + Historia_familiar, data = almac_sangre)
+summary(modelo_multiple)
+```
+
+```{r}
+#Diagnòstico del modelo
+plot(modelo_simple)
+```
