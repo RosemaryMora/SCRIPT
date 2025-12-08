@@ -1,0 +1,25 @@
+---
+title: "SEMANA_10"
+author: "ROSEMARY_MORA"
+format: html
+editor: visual
+---
+
+## Quarto
+
+CALCULAR LAS MEDIDAS DE TENDENCIA CENTRAL (MEDIA ARITMÉTICA, MEDIANA Y MODA)
+
+```{r}
+#Media aritmètica
+mean(data$Edad)
+```
+
+```{r}
+#Mediana aritmètica
+median(data$Edad)
+```
+
+```{r}
+#Moda aritmètica
+mode_edad<-names(sort(table(data$Edad),decreasing = TRUE))
+```
