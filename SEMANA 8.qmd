@@ -1,0 +1,27 @@
+---
+title: "SEMANA_8"
+author: "ROSEMARY MORA"
+format: html
+editor: visual
+---
+
+## INSTALAR UN PAQUETE DE RSTUDIO Y REALIZAR UN GRÀFICO (HISTOGRAMA)
+
+```{r}
+#Instalamos el paquete "ggplot2"
+install.packages("ggplot2")
+install.packages("readr")
+```
+
+```{r}
+#activamos el paquete
+library(ggplot2)
+library(readr)
+```
+
+```{r}
+#Creamos nuestro histograma a partir de nuestro conjunto de datos "almac_sangre"
+ggplot(data, aes(x=Edad))+geom_histogram(bins = 30)+theme_minimal()+
+  labs(title ="Histograma de Edad" )
+ 
+```
